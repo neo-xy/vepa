@@ -1,0 +1,56 @@
+<div class="container">
+  <h3 class="mt-5 mb-5">Anställd</h3>
+
+  <form (ngSubmit)="createEmployee(form)" #form="ngForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Förnamn</label>
+        <input type="email" class="form-control" ngModel required id="inputEmail4" placeholder="John" name="firstName">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Efternamn</label>
+        <input type="password" class="form-control" ngModel required id="inputPassword4" placeholder="Doe"
+               name="lastName">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="socialNumber">Perssonnummer</label>
+        <input type="text" class="form-control" ngModel required id="socialNumber" placeholder="1234 Main St"
+               name="socialNumber">
+      </div>
+
+      <div class="form-group  col-md-6">
+        <label for="email">E-post</label>
+        <input type="email" id="email" ngModel required class="form-control" name="email" placeholder="joe@doe.com">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" ngModel required id="inputAddress" name="address"
+               placeholder="1234 Main St">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="phone">Telefon</label>
+        <input type="number" class="form-control" ngModel required id="phone" name="phone" placeholder="074354321">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Stan</label>
+        <input type="text" class="form-control" ngModel required id="inputCity" name="city" placeholder="Stockholm">
+      </div>
+
+      <div class="form-group col-md-2">
+        <label for="inputZip">Post kod</label>
+        <input type="number" class="form-control" ngModel required id="inputZip" name="zipCode" placeholder="303-33">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">skapa</button>
+  </form>
+
+</div>
